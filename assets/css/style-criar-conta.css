@@ -109,6 +109,28 @@ body {
   font-weight: bold;
 }
 
+.toast-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f1dfce;
+  color: #3a2720;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, top 0.3s ease;
+  z-index: 1000;
+}
+
+.toast-message.show {
+  opacity: 1;
+  top: 40px;
+}
+
+
 /* Responsividade */
 @media (min-width: 600px) {
   .form-container {
