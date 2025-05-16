@@ -2,77 +2,79 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gran Sabor - Início</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style-inicio.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <header class="top-bar">
-    <div class="user-info">
+  <header class="header">
+    <div class="profile-info">
       <div class="status-indicator"></div>
       <span>GUILHERME QUARESMA</span>
     </div>
-    <div class="icon">
-      <i class="fas fa-comment-alt"></i>
+    <div class="icon-message">
+      <img src="assets/icons/message.svg" alt="Mensagens" />
     </div>
   </header>
 
-  <main class="content">
-    <section class="section">
+  <main class="main-content">
+    <section class="sugestoes">
       <h2>SUGESTÕES</h2>
-      <div class="sugestoes">
+      <div class="items">
         <div class="item">
-          <img src="assets/img/bolo.png" alt="Bolo" />
-          <span>BOLO</span>
+          <img src="assets/img/bolo.jpg" alt="Bolo">
+          <p>BOLO</p>
         </div>
         <div class="item">
-          <img src="assets/img/brigadeiro.png" alt="Brigadeiro" />
-          <span>BRIGADEIRO</span>
+          <img src="assets/img/brigadeiro.jpg" alt="Brigadeiro">
+          <p>BRIGADEIRO</p>
         </div>
       </div>
-      <button class="vermais">VER MAIS...</button>
+      <button class="ver-mais">VER MAIS...</button>
     </section>
 
-    <hr />
+    <hr class="divider"/>
 
-    <section class="section">
+    <section class="promocoes">
       <h2>PROMOÇÕES</h2>
-      <div class="promocoes">
-        <div class="produto">
-          <img src="assets/img/bolo_fatia.png" alt="Bolo Fatia" />
-          <strong>BOLO FATIA</strong>
-          <span>BRIGADEIRO E MARACUJÁ</span>
-          <div class="preco-fav">
-            <span>R$ 10,00</span>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-plus"></i>
-          </div>
+      <div class="items">
+        <div class="item">
+          <img src="assets/img/bolo-fat.jpg" alt="Bolo Fatia">
+          <p class="nome">BOLO FATIA</p>
+          <p class="desc">BRIGADEIRO E MARACUJÁ</p>
+          <p class="preco">R$ 10,00 <span class="icon">+</span></p>
         </div>
-        <div class="produto">
-          <img src="assets/img/brigadeiro_promo.png" alt="Brigadeiro" />
-          <strong>BRIGADEIRO</strong>
-          <span>CHOCOLATE E BEIJINHO</span>
-          <div class="preco-fav">
-            <span>R$ 8,00</span>
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-plus"></i>
-          </div>
+        <div class="item">
+          <img src="assets/img/brigadeiro-duplo.jpg" alt="Brigadeiro">
+          <p class="nome">BRIGADEIRO</p>
+          <p class="desc">CHOCOLATE E BEIJINHO</p>
+          <p class="preco">R$ 8,00 <span class="icon">❤️</span></p>
         </div>
       </div>
-      <button class="vermais">VER MAIS...</button>
+      <button class="ver-mais">VER MAIS...</button>
     </section>
   </main>
 
-  <footer class="bottom-nav">
+  <!-- Barra de navegação inferior -->
+<nav class="bottom-nav">
+  <a href="inicio.html" class="nav-item active">
     <i class="fas fa-home"></i>
-    <i class="fas fa-star"></i>
+  </a>
+  <a href="promocoes.html" class="nav-item">
+    <i class="fas fa-shopping-bag"></i>
+  </a>
+  <a href="carrinho.html" class="nav-item">
     <i class="fas fa-shopping-cart"></i>
+  </a>
+  <a href="notificacoes.html" class="nav-item">
     <i class="fas fa-bell"></i>
+  </a>
+  <a href="perfil.html" class="nav-item">
     <i class="fas fa-user"></i>
-  </footer>
+  </a>
+</nav>
 
-  <script src="assets/js/login.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

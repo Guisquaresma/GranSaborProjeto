@@ -70,3 +70,21 @@ document.querySelectorAll('.fa-plus').forEach(icon => {
     alert('Adicionado ao carrinho!');
   });
 });
+
+// assets/js/inicio.js
+
+document.addEventListener('DOMContentLoaded', () => {
+  const botoes = document.querySelectorAll('.ver-mais');
+  botoes.forEach(btn => {
+    btn.addEventListener('click', () => {
+      alert('Mais itens em breve...');
+    });
+  });
+});
+
+  const currentPage = window.location.pathname;
+  document.querySelectorAll(".bottom-nav a").forEach(link => {
+    if (link.getAttribute("href") === currentPage.split("/").pop()) {
+      link.classList.add("active");
+    }
+  });
